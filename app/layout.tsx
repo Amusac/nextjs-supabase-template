@@ -1,11 +1,8 @@
-import { EnvVarWarning } from "@/components/env-var-warning";
-import HeaderAuth from "@/components/header-auth";
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "next-themes";
-import Link from "next/link";
 import "./globals.css";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 const defaultUrl = process.env.VERCEL_URL
 	? `https://${process.env.VERCEL_URL}`
@@ -33,9 +30,11 @@ export default function RootLayout({
 				>
 					<main className="min-h-screen flex flex-col items-center">
 						<div className="flex-1 w-full flex flex-col gap-20 items-center">
+							<Header />
 							<div className="flex flex-col gap-20 max-w-5xl p-5">
 								{children}
 							</div>
+							<Footer />
 						</div>
 					</main>
 				</ThemeProvider>
