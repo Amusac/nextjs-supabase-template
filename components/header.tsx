@@ -1,5 +1,5 @@
-import React from "react";
+import type React from "react";
 
-export default function Header() {
+export const Header: React.FC = () => {
 	return <></>;
-}
+};
