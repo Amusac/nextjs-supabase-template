@@ -20,7 +20,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={GeistSans.className} suppressHydrationWarning>
+		<html lang="ja" className={GeistSans.className} suppressHydrationWarning>
 			<body className="bg-background text-foreground">
 				<ThemeProvider
 					attribute="class"
@@ -28,10 +28,10 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<main className="min-h-screen flex flex-col items-center">
+					<main className="min-h-screen flex flex-col items-center w-full">
 						<div className="flex-1 w-full flex flex-col items-center">
 							<Header />
-							<div className="flex flex-col gap-20 max-w-5xl p-5">
+							<div className="flex flex-col gap-20 max-w-5xl p-5 w-full">
 								{children}
 							</div>
 							<Footer />
