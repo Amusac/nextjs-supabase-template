@@ -1,4 +1,4 @@
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
